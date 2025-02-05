@@ -1,7 +1,21 @@
-[gd_scene load_steps=2 format=3 uid="uid://724m44rl8l4c"]
+[gd_scene load_steps=3 format=3 uid="uid://724m44rl8l4c"]
 
 [ext_resource type="Texture2D" uid="uid://s1iegh4d3s8w" path="res://images/icon.svg" id="1_6ru1u"]
+[ext_resource type="Texture2D" uid="uid://canj276t8dn0o" path="res://images/panda.png" id="2_v4oxm"]
 
 [node name="Icon" type="Sprite2D"]
-position = Vector2(663, 248)
+position = Vector2(706, 441)
 texture = ExtResource("1_6ru1u")
+
+[node name="Panda" type="Sprite2D" parent="."]
+position = Vector2(195, 887)
+texture = ExtResource("2_v4oxm")
+
+[node name="Panda2" type="Sprite2D" parent="."]
+position = Vector2(1815, 371)
+texture = ExtResource("2_v4oxm")
+
+[node name="Sprite2D" type="Sprite2D" parent="Panda2"]
+position = Vector2(-664, 173)
+scale = Vector2(0.518557, 0.455043)
+texture = ExtResource("2_v4oxm")
