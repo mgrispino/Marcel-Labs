@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://bbn1j24jlnenx"]
+
+[ext_resource type="Texture2D" uid="uid://bcpwn13p4obqx" path="res://images/pngimg.com - tree_PNG92748.png" id="1_qde10"]
+[ext_resource type="Texture2D" uid="uid://clq03gwowqume" path="res://images/Orange_PNG_Vector_Clipart_Image.png" id="2_ep5rb"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Pngimg_com-TreePng92748" type="Sprite2D" parent="."]
+position = Vector2(-1, -111)
+scale = Vector2(0.393707, 0.393707)
+texture = ExtResource("1_qde10")
+
+[node name="Sprite2D" type="Sprite2D" parent="Pngimg_com-TreePng92748"]
+position = Vector2(-132.62, 67.1087)
+scale = Vector2(0.274462, 0.274462)
+texture = ExtResource("2_ep5rb")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Pngimg_com-TreePng92748"]
+position = Vector2(118.239, 127.826)
+scale = Vector2(0.274462, 0.274462)
+texture = ExtResource("2_ep5rb")

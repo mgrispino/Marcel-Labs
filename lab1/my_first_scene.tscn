@@ -1,21 +1,49 @@
-[gd_scene load_steps=3 format=3 uid="uid://724m44rl8l4c"]
+[gd_scene load_steps=5 format=3 uid="uid://724m44rl8l4c"]
 
-[ext_resource type="Texture2D" uid="uid://s1iegh4d3s8w" path="res://images/icon.svg" id="1_6ru1u"]
-[ext_resource type="Texture2D" uid="uid://canj276t8dn0o" path="res://images/panda.png" id="2_v4oxm"]
+[ext_resource type="Texture2D" uid="uid://bgl6bj55oiokm" path="res://images/transparent-glasses-apple-farmer-with-ripe-apples-in-basket6612ef4f3a7ee7.59458614.png" id="1_odu05"]
+[ext_resource type="Texture2D" uid="uid://bcpwn13p4obqx" path="res://images/pngimg.com - tree_PNG92748.png" id="2_wlvjx"]
+[ext_resource type="Texture2D" uid="uid://136ywdjq1e0w" path="res://images/pngtree-fresh-apple-fruit-red-png-image_10203073.png" id="3_d6osp"]
+[ext_resource type="PackedScene" uid="uid://bbn1j24jlnenx" path="res://orange tree.tscn" id="4_mhqtk"]
 
-[node name="Icon" type="Sprite2D"]
-position = Vector2(706, 441)
-texture = ExtResource("1_6ru1u")
+[node name="Node2D" type="Node2D"]
 
-[node name="Panda" type="Sprite2D" parent="."]
-position = Vector2(195, 887)
-texture = ExtResource("2_v4oxm")
+[node name="farmer" type="Sprite2D" parent="."]
+position = Vector2(552, 551)
+scale = Vector2(0.0471252, 0.0471252)
+texture = ExtResource("1_odu05")
 
-[node name="Panda2" type="Sprite2D" parent="."]
-position = Vector2(1815, 371)
-texture = ExtResource("2_v4oxm")
+[node name="tree1" type="Sprite2D" parent="."]
+position = Vector2(340, 525)
+scale = Vector2(0.419218, 0.419218)
+texture = ExtResource("2_wlvjx")
 
-[node name="Sprite2D" type="Sprite2D" parent="Panda2"]
-position = Vector2(-664, 173)
-scale = Vector2(0.518557, 0.455043)
-texture = ExtResource("2_v4oxm")
+[node name="apple1" type="Sprite2D" parent="tree1"]
+position = Vector2(-116.884, 88.2597)
+scale = Vector2(0.452096, 0.41889)
+texture = ExtResource("3_d6osp")
+
+[node name="apple2" type="Sprite2D" parent="tree1"]
+position = Vector2(78.718, 19.0832)
+scale = Vector2(0.452096, 0.41889)
+texture = ExtResource("3_d6osp")
+
+[node name="tree2" type="Sprite2D" parent="."]
+position = Vector2(754, 514)
+scale = Vector2(0.447279, 0.447279)
+texture = ExtResource("2_wlvjx")
+
+[node name="apple3" type="Sprite2D" parent="tree2"]
+position = Vector2(-100.608, 228.046)
+scale = Vector2(0.375792, 0.375792)
+texture = ExtResource("3_d6osp")
+
+[node name="apple4" type="Sprite2D" parent="tree2"]
+position = Vector2(111.787, 29.0646)
+scale = Vector2(0.375792, 0.375792)
+texture = ExtResource("3_d6osp")
+
+[node name="orange tree1" parent="." instance=ExtResource("4_mhqtk")]
+position = Vector2(94, 638)
+
+[node name="orange tree 2" parent="." instance=ExtResource("4_mhqtk")]
+position = Vector2(999, 638)
