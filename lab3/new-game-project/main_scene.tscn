@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://ba82yul3bsvru"]
+
+[ext_resource type="Texture2D" uid="uid://dyshyrf2bpqdb" path="res://imgs/passenger-plane-flying-in-the-sky-side-view-travel-concept-png.png" id="1_kwwgp"]
+[ext_resource type="Script" path="res://moving_script.gd" id="2_uwu27"]
+
+[node name="Passenger-plane-flying-in-the-sky-side-view-travel-concept-png" type="Sprite2D"]
+position = Vector2(398, 296)
+texture = ExtResource("1_kwwgp")
+script = ExtResource("2_uwu27")

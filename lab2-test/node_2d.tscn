@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://gp73bwupuqeg"]
+
+[ext_resource type="Texture2D" uid="uid://dcds03k3f6i2g" path="res://icon.svg" id="1_jbiu2"]
+[ext_resource type="Script" path="res://icon.gd" id="2_35dn0"]
+[ext_resource type="Script" path="res://script2.gd" id="3_gh51r"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(102, 125)
+scale = Vector2(1.5625, 1.46875)
+texture = ExtResource("1_jbiu2")
+script = ExtResource("2_35dn0")
+vector = 3
+speed = null
+
+[node name="Icon2" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(1030, 201)
+scale = Vector2(1.5625, 1.46875)
+texture = ExtResource("1_jbiu2")
+script = ExtResource("3_gh51r")
