@@ -10,14 +10,14 @@ config_version=5
 
 [application]
 
-config/name="testinglab"
-run/main_scene="res://node_2d.tscn"
+config/name="New Game Project"
+run/main_scene="res://node_3d.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [dotnet]
 
-project/assembly_name="Lab2-test"
+project/assembly_name="New Game Project"
 
 [rendering]
 

@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://b5t38k23dysx0"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_v03xn"]
+
+[sub_resource type="Environment" id="Environment_exo1e"]
+
+[node name="Node3D" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00926948, -0.00271904, -0.0011532)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.40866, 0.358441, -0.343947)
+mesh = SubResource("BoxMesh_v03xn")
+
+[node name="Camera3D" type="Camera3D" parent="MeshInstance3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_exo1e")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="WorldEnvironment"]
