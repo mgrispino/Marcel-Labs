@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://wc20otjunhpo"]
+[gd_scene load_steps=11 format=3 uid="uid://wc20otjunhpo"]
 
 [ext_resource type="Script" path="res://character_body_3d.gd" id="1_61g1o"]
 
@@ -15,6 +15,10 @@ sky_material = SubResource("ProceduralSkyMaterial_ao4c8")
 background_mode = 2
 sky = SubResource("Sky_clvoh")
 tonemap_mode = 2
+fog_enabled = true
+fog_light_color = Color(0, 0, 0, 1)
+fog_light_energy = 7.23
+fog_density = 0.3352
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_gwnur"]
 
@@ -28,6 +32,8 @@ data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_72pma"]
 height = 1.23545
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_0cm3o"]
 
 [node name="Node3D" type="Node3D"]
 
@@ -77,8 +83,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.278812, 0)
 script = ExtResource("1_61g1o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0610557, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.216112, 0)
 shape = SubResource("CapsuleShape3D_72pma")
 
 [node name="Camera3D" type="Camera3D" parent="CharacterBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.0711157)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.537211, 1.38601)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D"]
+transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 0, 0.385103, -0.0522158)
+mesh = SubResource("CapsuleMesh_0cm3o")
